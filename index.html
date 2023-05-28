@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry-genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- header part start -->
+    <header class="mx-8 mt-10 mb-12">
+      <!-- navbar part -->
+        <div class="navbar bg-blue-100 px-7 py-3 rounded">
+            <div class="flex-1">
+              <ul>
+                <li class="text-3xl font-bold text-slate-700">Interactive </li>
+                <li class="text-xl font-semibold text-slate-500">Geometry Genius</li>
+              </ul>
+            </div>
+            <div class="flex-none">
+              <button class="btn btn-square btn-ghost text-lg font-semibold text-white bg-sky-500 px-12  " >
+                <!-- <a href="blog.html" target="_blank">Blog</a> -->
+              </button>
+            </div>
+          </div>
+          <!-- navbar part -->
+    </header>
+    <!-- header part end -->
+
+    <!-- main part start -->
+    <main>
+        <section class="p-12 flex flex-col md:flex-row lg:flex-row">
+            <div  class="geometry-cards grid md:grid-cols-2 lg:grid-cols-3 w-full lg:w-[70%] md:w-[70%] gap-5  lg:mx-0 md:mx-0">
+
+                <!-- card-one -->
+
+                  <div id="card-one-hover" class="card w-full bg-base-100 shadow-xl border border-gray-200 ">
+                    <figure><img class="mb-8 mt-7" src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                      <h2 id="triangle-card-title" class=" mx-auto text-black font-bold text-2xl "> Triangle </h2>
+                      <p class=" text-black mx-auto">Area (A) = 0.5 <img class="w-4 inline" src="images/close.png" alt=""> b <img class="w-4 inline" src="images/close.png" alt=""> h</p>
+                      <p>
+                        <input id="triangle-input-first" class="bg-zinc-100 w-1/4 text-black px-3 mr-1 rounded mt-3" type="text" name="" id="" placeholder="b"> cm 
+                      <input id="triangle-input-second" class="bg-zinc-100 w-1/4 text-black px-3 ml-1 mt-3 rounded" type="text" name="" id="" placeholder="b"> cm
+                      </p>
+                      <div class="card-tital ">
+                        <button id="btn-triangle" class=" btn btn-info text-xl w-full mt-6"> Calculate </button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <!-- card-two -->
+
+                <div id="card-two-hover" class="card w-full bg-base-100 shadow-xl border border-gray-200 ">
+                    <figure><img class="p-7 mt-12" src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                      <h2 id="rectangle-card-title" class="card-title mx-auto text-black font-bold text-2xl"> Rectangle </h2>
+                      <p class=" text-black mx-auto">Area (A) = w <img class="w-4 inline" src="images/close.png" alt=""> l </p>
+                      <p>
+                        <input id="rectangle-first-input" class=" bg-zinc-100 w-1/4 text-black px-3 mr-1 rounded mt-3" type="text" name="" id="" placeholder="w"> cm 
+                      <input id="rectangle-second-input" class="bg-zinc-100 w-1/4 text-black px-3 ml-1 mt-3 rounded" type="text" name="" id="" placeholder="l"> cm
+                      </p>
+                      <div class="card-btn ">
+                        <button id="btn-rectangle"class="btn btn-info text-xl w-full mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- card-three -->
+
+                <div id="card-three-hover" class="card w-full bg-base-100 shadow-xl border border-gray-200 ">
+                    <figure><img class="mt-12 p-4 pt-8" src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                      <h2 id="Parallelogram-card-titel" class="card-title mx-auto mt-4 text-black font-bold text-2xl"> Parallelogram </h2>
+                      <p class=" text-black mx-auto">Area (A) = b <img class="w-4 inline" src="images/close.png" alt=""> h </p>
+                      <p>
+                        <input id="Parallelogram-card-inputone" class=" bg-zinc-100 w-1/4 text-black px-3 mr-1 rounded mt-3" type="text" name="" id="" placeholder="b"> cm 
+                      <input id="Parallelogram-card-inputtwo" class="bg-zinc-100 w-1/4 text-black px-3 ml-1 mt-3 rounded" type="text" name="" id="" placeholder="h"> cm
+                      </p>
+                      <div  class="card-btn ">
+                        <button id="brn-Parallelogram" class="btn btn-info text-xl w-full mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- card-four -->
+
+                <div id="card-four-hover" class="card w-full bg-base-100 shadow-xl border border-gray-200 ">
+                    <figure><img class="mt-7 p-4" src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                      <h2 id="rhombus-card-titel" class="card-title mx-auto text-black font-bold text-2xl"> Rhombus </h2>
+                      <p class=" text-black mx-auto">Area (A) = 0.5 <img class="w-4 inline" src="images/close.png" alt=""> d<sub>1</sub> <img class="w-4 inline" src="images/close.png" alt=""> d<sub>2</sub> </p>
+                      <p>
+                        <input class=" bg-zinc-100 w-1/4 text-black px-3 mr-1 rounded mt-3" type="text" name="" id="rhombus-card-inputone" placeholder="d"> cm 
+                      <input class="bg-zinc-100 w-1/4 text-black px-3 ml-1 mt-3 rounded" type="text" name="" id="rhombus-card-inputtwo" placeholder="d"> cm
+                      </p>
+                      <div class="card-btn ">
+                        <button id="brn-rhombus" class="btn btn-info text-xl w-full mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- card-five -->
+
+                <div id="card-five-hover" class="card w-full bg-base-100 shadow-xl border border-gray-200 ">
+                    <figure><img class="mt-7 p-4" src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                      <h2 id="pentagon-card-titel" class="card-title mx-auto text-black font-bold text-2xl"> Pentagon </h2>
+                      <p class=" text-black mx-auto">Area (A) = 0.5 <img class="w-4 inline" src="images/close.png" alt=""> p <img class="w-4 inline" src="images/close.png" alt=""> b</p>
+                      <p>
+                        <input id="pentagon-card-inputone" class=" bg-zinc-100 w-1/4 text-black px-3 mr-1 rounded mt-3" type="text" name="" id="" placeholder="p"> cm 
+                      <input id="pentagon-card-inputtwo" class="bg-zinc-100 w-1/4 text-black px-3 ml-1 mt-3 rounded" type="text" name="" id="" placeholder="b"> cm
+                      </p>
+                      <div class="card-btn ">
+                        <button id="brn-pentagon" class="btn btn-info text-xl w-full mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- card-six -->
+
+                <div id="card-six-hover" class="card w-full bg-base-100 shadow-xl border border-gray-200 ">
+                    <figure><img class="mt-7 p-4" src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                      <h2 id="ellipse-card-titel" class="card-title mx-auto mt-9 text-black font-bold text-2xl"> Ellipse </h2>
+                      <p class=" text-black mx-auto">Area (A) = <img class="w-4 inline" src="images/pi.png" alt=""> ab</p>
+                      <p>
+                        <input id="ellipse-card-inputone" class=" bg-zinc-100 w-1/4 text-black px-3 mr-1 rounded mt-3" type="text" name="" id="" placeholder="p"> cm 
+                      <input id="ellipse-card-inputtwo" class="bg-zinc-100 w-1/4 text-black px-3 ml-1 mt-3 rounded" type="text" name="" id="" placeholder="b"> cm
+                      </p>
+                      <div class="card-btn ">
+                        <button id="btn-ellipse" class="btn btn-info text-xl w-full mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+            <!-- area calculation -->
+            <div class="area-calculation w-full lg:w-[25%] mx-auto mt-10">
+                  <h1 class="text-2xl font-bold text-center underline">Area Calculation</h1> 
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th></th>
+                          <th></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody id="table-container" class=" text-lg font-bold w-full">
+                        
+                      </tbody>
+                    </table>
+                    
+            </div>
+             <!-- area calculation -->
+
+        </section>
+    </main>
+    <!-- main part end -->
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>
